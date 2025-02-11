@@ -1,0 +1,16 @@
+#tableRow, h2{
+    /* background-color: navy; */
+    color: rgb(12, 12, 205) ;
+}
+
+#book{
+    color: white ;
+    background-color: rgb(105, 96, 126);
+}
+
+p{
+    color:white ;
+    background-color: pink;
+}
+
+

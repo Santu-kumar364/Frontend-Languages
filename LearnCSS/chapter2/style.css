@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.red{ 
+    background-color: #fbb4b4;
+    color: blue;
+    height: 52px;
+}
+.green{
+    background: green;
+    color: rgb(192, 204, 154);
+    height: 86px;
+      
+}
+
