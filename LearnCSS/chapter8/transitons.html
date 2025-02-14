@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            height: 45px;
+            background: red;
+        }
+
+        .box {
+            border: 2px solid blue;
+            display: inline-block;
+        }
+
+        img {
+            width: 146px;
+            /* transition-property: width; */
+            /* transition-duration: 1s; */
+            /* transition-timing-function: ease-in; */
+            transition-delay: 3s;
+            /* Set an initial width */
+            transition: width 1s ease-in;
+            /* Smooth transition */
+        }
+
+        img:hover {
+            width: 65px;
+            /* Increase the width on hover */
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img id="myImage" src="globeImg.avif" alt="Birds">
+            <button id="btn">Toggle</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

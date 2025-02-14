@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: black;
+            color: aliceblue;
+        }
+
+        ul{
+            display: inline-grid;
+            grid-template-columns:  auto auto auto;
+            padding: 20px 0 ;
+        }
+
+        ul li{
+            list-style-type: none;
+            margin: 0 25px;
+        }
+
+        .container{
+            background: red;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+             
+
+        }
+
+        .box{
+            height: 50vh;
+            width: 40vw;
+            background: aqua;
+            border: 2px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>        
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+         <div class="box">box1</div>
+        <div class="box">box2</div>
+   
+    </div>
+</body>
+</html>
