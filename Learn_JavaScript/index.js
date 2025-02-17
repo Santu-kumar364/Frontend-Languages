@@ -206,6 +206,28 @@ myString.replace("santu" ,"ajeet")*/
 
 // Date in javascript
 
-let myDate = new Date();
+/*let myDate = new Date();
 console.log(myDate.getTime())
-console.log(myDate.getFullYear)
+console.log(myDate.getFullYear())*/
+
+
+
+
+
+// DOM: Document- Object-Manipulation
+
+let elem = document.getElementById('click');
+console.log(elem);
+
+let elemClass = document.getElementsByClassName("container");
+console.log(elemClass);
+// elemClass[0].style.background = "yellow"
+
+// elemClass[0].classList.add("bg-primary")
+// elemClass[0].classList.add("text-success")
+ 
+// console.log(elem.innerHTML)
+// console.log(elem.innerText)
+
+// console.log(elemClass[0].innerHTML)
+// console.log(elemClass[0].innerText)
