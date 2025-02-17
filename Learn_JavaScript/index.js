@@ -221,13 +221,34 @@ console.log(elem);
 
 let elemClass = document.getElementsByClassName("container");
 console.log(elemClass);
-// elemClass[0].style.background = "yellow"
+elemClass[0].style.background = "yellow"
 
 // elemClass[0].classList.add("bg-primary")
 // elemClass[0].classList.add("text-success")
+// elemClass[0].classList.remove("bg-primary")
  
 // console.log(elem.innerHTML)
 // console.log(elem.innerText)
 
 // console.log(elemClass[0].innerHTML)
 // console.log(elemClass[0].innerText)
+
+
+tn = document.getElementsByTagName('div')    // to print all div
+tnn = document.getElementsByTagName('button')  
+
+createdElement = document.createElement('p');
+createdElement.innerText = "This is a created para";
+tn[0].appendChild(createdElement);
+
+createdElement2 = document.createElement('b');
+createdElement2.innerText = "This is a Replaced para";
+tn[0].replaceChild(createdElement2, createdElement);
+
+
+// selecting using query
+sel = document.querySelector('.container')
+console.log(sel);
+
+sel = document.querySelectorAll('.container')
+console.log(sel);
