@@ -31,22 +31,31 @@
 
         .container {
             background: aqua;
-            height: 50vh;
+            height: 300px;
+            width: 300px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            animation: santu 2s ease-in-out 3 alternate ;
+            
         }
 
 
 
         img{
-            animation: santu 1s ease-in-out 3;
+            
+            
              
         }
 
         @keyframes santu {
             from{
-                width: 200px;
+                height: 30vh;
+                width: 30vw;
             }
             to{
-                width: 50px;
+                width: 100vw;
+                height: 100vh;
             }
             
         }
@@ -64,7 +73,7 @@
         </nav>
     </header>
     <div class="container">
-        <img src="globeImg.avif" alt="globePicture" width="200px">
+        <img src="globeImg.avif" alt="globePicture" width="150px" height="150px">
  
     </div>
 </body>
