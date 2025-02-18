@@ -234,7 +234,7 @@ elemClass[0].style.background = "yellow"
 // console.log(elemClass[0].innerText)
 
 
-tn = document.getElementsByTagName('div')    // to print all div
+/*tn = document.getElementsByTagName('div')    // to print all div
 tnn = document.getElementsByTagName('button')  
 
 createdElement = document.createElement('p');
@@ -251,4 +251,44 @@ sel = document.querySelector('.container')
 console.log(sel);
 
 sel = document.querySelectorAll('.container')
-console.log(sel);
+console.log(sel);*/
+
+
+
+// Events
+function clicked() {
+    console.log("The documet was clicked")
+}
+
+window.onload = function() {
+    console.log("page is loaded")
+}
+
+
+// firstContainer.addEventListener('click', function(){
+//     document.querySelectorAll(".container")[1].innerHTML = "<b> we have clicked</b>"
+//     console.log("clicked on Container")
+
+// })
+
+// firstContainer.addEventListener('mouseover', function(){
+//     console.log("mouse inside the container")
+// })
+
+
+let previousHTML = document.querySelectorAll(".container")[1].innerHTML;
+ 
+firstContainer.addEventListener('mousedown', function(){
+    document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked </b>"
+    console.log("mouse down when clicked on the Container")
+})
+
+firstContainer.addEventListener('mouseup', function(){
+    document.querySelectorAll('.container')[1].innerHTML = previousHTML;
+    console.log("mouse up when clicked on Container")
+})
+
+firstContainer.addEventListener('mouseout', function(){
+    document.querySelectorAll('.container')[1].innerHTML = previousHTML;
+    console.log("mouse is out")
+})
